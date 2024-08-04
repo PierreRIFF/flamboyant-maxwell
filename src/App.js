@@ -219,18 +219,21 @@ export default function App() {
         />
       </Grid>
 
-      <p>Guitare</p>
-      <p>Pep</p>
-      <p>Pub</p>
-      <p>Mob</p>
-      <p>Stan</p>
-      <p>Rouge</p>
-      <p>Vert</p>
-      <p>Nancy</p>
-      <p>Ska</p>
-      <p>Art</p>
-      <p>Loritz</p>
-      <p>Poinca</p>
+      <p>Instrument de prédilection de Vincent (7 lettres)</p>
+      <p>Le plus grand parc de Nancy, mais version raccourcie (3 lettres)</p>
+      <p>Le Mac Carthy en est un</p>
+      <p>Doit souvent être tué dans les MMMPORPG ou "Meuporg" (3 lettres)</p>
+      <p>La place la plus connue de Nancy, en version raccourcie (4 lettres)</p>
+      <p>Couleur préférée de Julie (5 lettres)</p>
+      <p>Couleur préférée de Vincent (4 lettres)</p>
+      <p>La ville où tout a commencé (5 lettres)</p>
+      <p>
+        Style musical issu du rock/reggae/jazz impliquant souvant des cuivres (3
+        lettres)
+      </p>
+      <p>La musique ou le cinéma en sont une forme (3 lettres)</p>
+      <p>Un lycée en P (6 lettres)</p>
+      <p>Un lycée en V (6 lettres)</p>
 
       <Snackbar
         anchorOrigin={{ vertical: "top", horizontal: "center" }}
