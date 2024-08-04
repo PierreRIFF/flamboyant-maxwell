@@ -4,6 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.tsx",
+  "homepage": "https://pierreriff.github.io/my-app",
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -21,7 +22,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "deploy" : "gh-pages -b main -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
