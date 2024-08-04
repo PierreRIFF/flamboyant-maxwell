@@ -45,9 +45,6 @@ export default function App() {
   ];
 
   const getString = (x1, y1, x2, y2) => {
-    const lengthY = Math.abs(y1 - y2);
-
-    console.log(x1, x2);
     let allX = [];
     let allY = [];
     if (x1 < x2) {
@@ -134,7 +131,6 @@ export default function App() {
       setFirstCoord([x, y]);
       setFirstClick(false);
     } else {
-      secondCoord = [x, y];
       getString(firstCoord[0], firstCoord[1], x, y);
       setFirstClick(true);
     }
@@ -142,8 +138,13 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Bonne chance les p'tits loups!</h2>
+      <h1>
+        Le prochain lieu où vous rendre sera dévoilé par cette grille. Bonne
+        chance!
+      </h1>
+      <h3>
+        Pour valider un mot, cliquez sur sa 1ère lettre puis sur sa dernière.
+      </h3>
       <Grid container spacing={0} columns={19}>
         <GridLine
           string={grid[0]}
@@ -219,26 +220,27 @@ export default function App() {
         />
       </Grid>
 
-      <p>Instrument de prédilection de Vincent (7 lettres)</p>
-      <p>Le plus grand parc de Nancy, mais version raccourcie (3 lettres)</p>
-      <p>Le Mac Carthy en est un</p>
-      <p>Doit souvent être tué dans les MMMPORPG ou "Meuporg" (3 lettres)</p>
+      <p>Le Mac Carthy en est un (3 lettres)</p>
+      <p>Un lycée en V (6 lettres)</p>
+      <p>Doit souvent être tué dans les MMORPG ou "Meuporg" (3 lettres)</p>
       <p>La place la plus connue de Nancy, en version raccourcie (4 lettres)</p>
+      <p>Instrument de prédilection de Vincent (7 lettres)</p>
       <p>Couleur préférée de Julie (5 lettres)</p>
-      <p>Couleur préférée de Vincent (4 lettres)</p>
       <p>La ville où tout a commencé (5 lettres)</p>
+      <p>Le plus grand parc de Nancy, mais version raccourcie (3 lettres)</p>
       <p>
         Style musical issu du rock/reggae/jazz impliquant souvant des cuivres (3
         lettres)
       </p>
-      <p>La musique ou le cinéma en sont une forme (3 lettres)</p>
+      <p>Couleur préférée de Vincent (4 lettres)</p>
       <p>Un lycée en P (6 lettres)</p>
-      <p>Un lycée en V (6 lettres)</p>
+      <p>La musique ou le cinéma en sont une forme (3 lettres)</p>
 
       <Snackbar
         anchorOrigin={{ vertical: "top", horizontal: "center" }}
         open={snackbar.open}
         onClose={() => setSnackbar({ open: false, message: "", severity: "" })}
+        autoHideDuration={1000}
       >
         <Alert elevation={6} variant="filled" severity={snackbar.severity}>
           {snackbar.message}
